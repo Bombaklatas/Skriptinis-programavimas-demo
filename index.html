@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Example</title>
+    <meta name="description" content="Asmeninė svetainė">
+    <meta name="author" content="Jūsų Vardas">
+    <title>Asmeninė svetainė</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="jpg/icon.png">
+    <!-- Autorius: Jūsų Vardas -->
 </head>
 <body>
     <header id="header">
@@ -12,28 +16,42 @@
             <h1 class="logo">Personal</h1>
             <nav>
                 <ul class="menu">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li class="dropdown">
-                        <a href="#">Dropdown</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Option 1</a></li>
-                            <li><a href="#">Option 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" class="active">Pradžia</a></li>
+                    <li><a href="paskaita.html">Apie</a></li>
+                    <li><a href="#resume">Aprašymas</a></li>
+                    <li><a href="#portfolio">Atlikti darbai</a></li>
+                    <li><a href="#services">Paslaugos</a></li>
+                    <li><a href="#contact">Kontaktai</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="hero">
+    <section id="about" class="hero">
         <div class="hero-content">
             <h2>Joris</h2>
             <p>Profesorius</p>
         </div>
+    </section>
+    <section id="resume">
+        <h2>Aprašymas</h2>
+        <p>Studentas Vilnius Tech universitete.</p>
+    </section>
+    <section id="portfolio">
+        <h2>Atlikti darbai</h2>
+        <img src="images/work1.jpg" alt="Darbo pavyzdys">
+        <img src="images/work2.jpg" alt="Darbo pavyzdys">
+    </section>
+    <section id="services">
+        <h2>Paslaugos</h2>
+        <video controls>
+            <source src="mp4/demo.mp4" type="video/mp4">
+            Jūsų naršyklė nepalaiko vaizdo įrašų.
+        </video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mMJbtH8UQXU"allowfullscreen></iframe>
+        <audio controls>
+            <source src="audio/sample.mp3" type="audio/mpeg">
+            Jūsų naršyklė nepalaiko garso įrašų.
+        </audio>
     </section>
 </body>
 </html>
