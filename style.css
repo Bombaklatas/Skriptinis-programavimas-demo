@@ -1,0 +1,98 @@
+/* Bendri nustatymai */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Header dalis */
+#header {
+    background-color: #222;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu li {
+    position: relative;
+}
+
+nav ul.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul.menu a.active,
+nav ul.menu a:hover {
+    color: #ff0000;
+    border-bottom: 2px solid #ff001e;
+}
+
+nav ul.menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul.menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul.menu .dropdown-menu li {
+    padding: 5px 15px;
+}
+
+nav ul.menu .dropdown-menu a {
+    padding: 5px 0;
+}
+
+/* Hero dalis */
+.hero {
+    background: url('jpg/backgroundas.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    color:#ff001e;
+    border-bottom: 2px solid #ff001e;
+    display: inline-block;
+}
