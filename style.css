@@ -1,17 +1,38 @@
-/* Bendri nustatymai */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #000;
+/* CSS Variables for Light and Dark Modes */
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --header-background-color: #222;
+    --header-text-color: #fff;
+    --link-hover-color: #ff0000;
+    --link-hover-border-color: #ff001e;
 }
 
-/* Header dalis */
+body.dark-mode {
+    --background-color: #000;
+    --text-color: #fff;
+    --header-background-color: #222;
+    --header-text-color: #fff;
+    --link-hover-color: #ff0000;
+    --link-hover-border-color: #ff001e;
+}
+
+/* General Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
 #header {
-    background-color: #222;
+    background-color: var(--header-background-color);
     padding: 20px 0;
     position: fixed;
     width: 100%;
+    top: 0;
     z-index: 1000;
 }
 
@@ -23,11 +44,12 @@ body {
 }
 
 .logo {
-    color: #fff;
+    color: var(--header-text-color);
     font-size: 24px;
     font-weight: bold;
 }
 
+/* Navigation Styles */
 nav ul.menu {
     list-style: none;
     display: flex;
@@ -41,7 +63,7 @@ nav ul.menu li {
 }
 
 nav ul.menu a {
-    color: #fff;
+    color: var(--header-text-color);
     text-decoration: none;
     padding: 10px 15px;
     transition: color 0.3s;
@@ -49,8 +71,8 @@ nav ul.menu a {
 
 nav ul.menu a.active,
 nav ul.menu a:hover {
-    color: #ff0000;
-    border-bottom: 2px solid #ff001e;
+    color: var(--link-hover-color);
+    border-bottom: 2px solid var(--link-hover-border-color);
 }
 
 nav ul.menu .dropdown-menu {
@@ -75,7 +97,7 @@ nav ul.menu .dropdown-menu a {
     padding: 5px 0;
 }
 
-/* Hero dalis */
+/* Hero Section */
 .hero {
     background: url('jpg/backgroundas.jpg') no-repeat center center/cover;
     height: 100vh;
@@ -90,9 +112,16 @@ nav ul.menu .dropdown-menu a {
     margin-bottom: 20px;
 }
 
-.hero-content p {
-    font-size: 24px;
-    color:#ff001e;
-    border-bottom: 2px solid #ff001e;
-    display: inline-block;
+/* Mode Toggle Button */
+.mode-toggle {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    border: 2px solid var(--link-hover-border-color);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mode-toggle:hover {
+    background-color: var(--link-hover-color);
 }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Personalweb</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="jpg/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Pretty font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        .portfolio-container {
+            text-align: left;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text readability */
+            border-radius: 10px;
+            margin: 20px;
+            color: #fff;
+        }
+        .portfolio-container h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .portfolio-container iframe {
+            float: left;
+            margin: 20px 20px 20px 0;
+        }
+        .portfolio-container audio {
+            display: block;
+            margin: 40px 0 20px 0; /* Add margin to place it a bit below the video */
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #ff0000; /* Red color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <h1 class="logo">Portfolio</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="portfolio-container">
+        <h2>My Portfolio</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mMJbtH8UQXU" title="Nes as tik vejas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <audio controls>
+            <source src="audio/sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="social-links">
+            <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+</body>
+</html>
