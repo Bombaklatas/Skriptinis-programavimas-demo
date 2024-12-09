@@ -17,6 +17,19 @@ body.dark-mode {
     --link-hover-border-color: #ff001e;
 }
 
+/* Result Styles */
+.result {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.result.red {
+    color: red;
+}
+
+.result.green {
+    color: green;
+}
 /* General Styles */
 body {
     background-color: var(--background-color);

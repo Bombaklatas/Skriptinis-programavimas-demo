@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Personalweb</title>
-    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="jpg/icon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Pretty font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="toggleMode.js"></script>
+    <script defer src="clock.js"></script>
+    <script defer src="contact.js"></script>
 </head>
 <body>
     <header>
@@ -17,11 +20,13 @@
                     <li><a href="index.html">Home</a></li>
                 </ul>
             </nav>
+            <button id="mode-toggle" class="mode-toggle">Night Mode</button>
+            <div id="clock" class="clock"></div>
         </div>
     </header>
     <section class="contact-container">
         <h2>Contact Me</h2>
-        <form action="#" method="post">
+        <form id="contact-form" action="#" method="post">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -38,8 +43,25 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
+            <div class="form-group">
+                <label for="age">Kiek jums metu:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="year">Kokie dabar metai:</label>
+                <input type="number" id="year" name="year" required>
+            </div>
+            <div class="form-group">
+                <label for="rating">Kaip jum patiko website:</label>
+                <input type="number" id="rating" name="rating" required>
+            </div>
+            <div class="form-group">
+                <label for="score">Ivertinkite mane:</label>
+                <input type="number" id="score" name="score" required>
+            </div>
             <button type="submit">Send</button>
         </form>
+        <div id="result" class="result"></div>
     </section>
 </body>
 </html>
