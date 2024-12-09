@@ -1,57 +1,38 @@
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Asmeninė svetainė">
-    <meta name="author" content="Jūsų Vardas">
-    <title>Asmeninė svetainė</title>
+    <title>Personalweb</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="jpg/icon.png">
-    <!-- Autorius: Jūsų Vardas -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="toggleMode.js"></script>
 </head>
 <body>
     <header id="header">
         <div class="container">
-            <h1 class="logo">Personal</h1>
+            <h1 class="logo">Personalweb</h1>
             <nav>
                 <ul class="menu">
-                    <li><a href="#" class="active">Pradžia</a></li>
-                    <li><a href="paskaita.html">Apie</a></li>
-                    <li><a href="#resume">Aprašymas</a></li>
-                    <li><a href="#portfolio">Atlikti darbai</a></li>
-                    <li><a href="#services">Paslaugos</a></li>
-                    <li><a href="#contact">Kontaktai</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </div>
+            <button id="mode-toggle" class="mode-toggle">Night Mode</button>
+        </div>21
     </header>
-    <section id="about" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h2>Joris</h2>
-            <p>Profesorius</p>
+            <h2>Tomas</h2>
+            <p>Degustuotojas</p>
         </div>
-    </section>
-    <section id="resume">
-        <h2>Aprašymas</h2>
-        <p>Studentas Vilnius Tech universitete.</p>
-    </section>
-    <section id="portfolio">
-        <h2>Atlikti darbai</h2>
-        <img src="images/work1.jpg" alt="Darbo pavyzdys">
-        <img src="images/work2.jpg" alt="Darbo pavyzdys">
-    </section>
-    <section id="services">
-        <h2>Paslaugos</h2>
-        <video controls>
-            <source src="mp4/demo.mp4" type="video/mp4">
-            Jūsų naršyklė nepalaiko vaizdo įrašų.
-        </video>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mMJbtH8UQXU"allowfullscreen></iframe>
-        <audio controls>
-            <source src="audio/sample.mp3" type="audio/mpeg">
-            Jūsų naršyklė nepalaiko garso įrašų.
-        </audio>
     </section>
 </body>
 </html>

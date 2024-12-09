@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    background: url('jpg/about.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    color: #fff; /* White text */
+    font-family: 'Roboto', sans-serif; /* Pretty font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #222; /* Black color */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0000; /* Red color on hover */
+    border-bottom: 2px solid #ff001e; /* Red border on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text readability */
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 100px; /* Adjust for fixed header */
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better text readability */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #fff; /* White border for images */
+}
