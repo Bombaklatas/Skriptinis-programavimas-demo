@@ -11,7 +11,7 @@
 body.dark-mode {
     --background-color: #000;
     --text-color: #fff;
-    --header-background-color: #222;
+    --header-background-color: #444;
     --header-text-color: #fff;
     --link-hover-color: #ff0000;
     --link-hover-border-color: #ff001e;
@@ -124,4 +124,26 @@ nav ul.menu .dropdown-menu a {
 
 .mode-toggle:hover {
     background-color: var(--link-hover-color);
+}
+
+/* Clock Styles */
+.clock {
+    font-size: 18px;
+    color: var(--header-text-color);
+    margin-left: 20px;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
